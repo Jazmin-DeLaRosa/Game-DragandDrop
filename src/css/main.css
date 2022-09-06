@@ -1,0 +1,235 @@
+/* general styles */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* menu */
+.menu-container {
+    width: 100%;
+    height: 85px;
+    background-color: #63adb7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-container {
+    margin-top: -25px;
+}
+
+.active {
+    color: black;
+    text-decoration: #000000 underline;
+    cursor: pointer;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.menu li {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* placeholder color */
+::-webkit-input-placeholder { color:black; } 
+:-moz-placeholder { /* Firefox 18- */ color:black; } 
+::-moz-placeholder { /* Firefox 19+ */ color:black; } 
+:-ms-input-placeholder { color:black; }
+:focus::-webkit-input-placeholder{color:black;}
+
+/* instrucciones */
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.instructions-container {
+    width: 80%;
+    height: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+/* levels */
+.first-levels-container,
+.second-levels-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.first-levels-container {
+    margin-bottom: 24px;
+}
+
+.level-one-box, 
+.level-four-box {
+    width: 350px;
+    height: 140px;
+    border-radius: 10px;
+}
+
+.level-two-box,
+.level-three-box {
+    width: 350px;
+    height: 140px;
+    border-radius: 10px;
+}
+
+.level-one-box a, .level-two-box a,
+.level-three-box a, .level-four-box a {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 15%;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.level-one-box {
+    background:#1dd8b6;
+    margin-right: 12px;
+}
+
+.level-two-box {
+    background:#349fe2;
+    margin-left: 12px;
+}
+
+.level-three-box {
+    background:#c94257;
+    margin-right: 12px;
+}
+
+.level-four-box {
+    background:#c5d15b;
+    margin-left: 12px;
+}
+
+.level-one-box a:hover, .level-two-box a:hover,
+.level-three-box a:hover, .level-four-box a:hover {
+    color: #000000;
+}
+
+.shadow {
+    -webkit-box-shadow: 12px 12px 24px rgba(12, 12, 12, 0.1);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    12px 12px 24px rgba(12, 12, 12, 0.1);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         12px 12px 24px rgba(12, 12, 12, 0.1);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  }
+
+/* footer */
+footer {
+    width: 100%;
+    height: 35px;
+    background-color: #F2F2F2;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+footer li {
+    display: inline;
+}
+
+footer li a {
+    display: inline;
+    margin-left: 60px;
+    text-decoration: none;
+    color: #ABABAB;
+}
+
+.rights-reserved {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: #5492BF;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+/* media query */
+@media (max-width: 840px) {
+    .menu {
+        display: none;
+    }
+
+    .image-container img {
+        margin-left: 15%;
+        margin-top: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .instructions-container {
+        width: 80%;
+        height: 60px;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        padding-bottom: 45px;
+    }
+
+    .first-levels-container,
+    .second-levels-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-levels-container {
+        margin-bottom: 0px;
+    }
+
+    .level-one-box, 
+    .level-two-box, 
+    .level-three-box, 
+    .level-four-box {
+        margin-bottom: 20px;
+    }
+
+    .level-one-box,
+    .level-three-box {
+        margin-right: 0px;
+    }
+
+    .level-two-box,
+    .level-four-box {
+        margin-left: 0px;
+    }
+}

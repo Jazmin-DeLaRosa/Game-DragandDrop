@@ -1,0 +1,167 @@
+/* general styles */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* menu */
+.menu-container {
+    width: 100%;
+    height: 120px;
+    background-color: #5492BF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-container {
+    margin-top: -25px;
+}
+
+.active {
+    color: black;
+    text-decoration: #000000 underline;
+    cursor: pointer;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.menu li {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.search-container {
+    margin-left: 225px;
+    margin-top: 15px;
+}
+
+.search {
+    width: 276px;
+    height: 40px;
+    background: url("../img/icono-buscador.png") #F2F2F2 no-repeat;
+    background-size: 18px;
+    background-position: 10px 9px;
+    opacity: 50%;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding-left: 35px;
+}
+
+/* placeholder color */
+::-webkit-input-placeholder { color:black; } 
+:-moz-placeholder { /* Firefox 18- */ color:black; } 
+::-moz-placeholder { /* Firefox 19+ */ color:black; } 
+:-ms-input-placeholder { color:black; }
+:focus::-webkit-input-placeholder{color:black;}
+
+/* content */
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 65vh;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    color: #ED754D;
+}
+
+
+.paragraph {
+    width: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #F2F2F2;
+    padding-top: 30px;
+}
+
+footer li {
+    display: inline;
+}
+
+footer li a {
+    display: inline;
+    margin-left: 60px;
+    text-decoration: none;
+    color: #ABABAB;
+}
+
+.footer-list {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.rights-reserved {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: #5492BF;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+/* media query */
+@media (max-width: 850px) {
+    .menu-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .search-container {
+        display: none;
+    }
+
+    .image-container img {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .paragraph {
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+    }
+}

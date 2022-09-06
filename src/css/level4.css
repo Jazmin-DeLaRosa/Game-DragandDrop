@@ -1,0 +1,253 @@
+/* general styles */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* menu */
+.menu-container {
+    width: 100%;
+    height: 120px;
+    background-color: #5492BF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-container {
+    margin-top: -25px;
+}
+
+.active {
+    color: black;
+    text-decoration: #000000 underline;
+    cursor: pointer;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.menu li {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.search-container {
+    margin-left: 225px;
+    margin-top: 15px;
+}
+
+.search {
+    width: 276px;
+    height: 40px;
+    background: url("../img/icono-buscador.png") #F2F2F2 no-repeat;
+    background-size: 18px;
+    background-position: 10px 9px;
+    opacity: 50%;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding-left: 35px;
+}
+
+/* placeholder color */
+::-webkit-input-placeholder { color:black; } 
+:-moz-placeholder { /* Firefox 18- */ color:black; } 
+::-moz-placeholder { /* Firefox 19+ */ color:black; } 
+:-ms-input-placeholder { color:black; }
+:focus::-webkit-input-placeholder{color:black;}
+
+/* instrucciones */
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #ED754D;
+}
+
+.price{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 30px;
+    width: 100%;
+    height: 40px;
+}
+
+/* content */
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.automatic-box {
+    width: 40%;
+}
+
+.automatic-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.money-container {
+    width: 60%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.groupCoinsOne button, .groupCoinsTwo button,
+.groupCoinsThree button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.groupCoinsOne button:hover,
+.groupCoinsTwo button:hover,
+.groupCoinsThree button:hover  {
+    background: #ED754D;
+}
+
+.ready {
+    width: 200px;
+    height: 40px;
+    background: #ED754D;
+    border-radius: 10px;
+    margin-top: 30px;
+    border-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.ready a:hover {
+    color: #000000;
+}
+
+.ready a {
+    text-decoration: none;
+    color: white;
+}
+
+.shadow {
+    -webkit-box-shadow: 12px 12px 24px rgba(12, 12, 12, 0.1);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    12px 12px 24px rgba(12, 12, 12, 0.1);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         12px 12px 24px rgba(12, 12, 12, 0.1);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  }
+
+/* footer */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #F2F2F2;
+    margin-top: 40px;
+    padding-top: 30px;
+}
+
+footer li {
+    display: inline;
+}
+
+footer li a {
+    display: inline;
+    margin-left: 60px;
+    text-decoration: none;
+    color: #ABABAB;
+}
+
+.footer-list {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.rights-reserved {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: #5492BF;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+/* media query */
+@media (max-width: 850px) {
+    .menu-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .search-container {
+        display: none;
+    }
+
+    .image-container img {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .automatic-box {
+        width: 100%;
+    }
+    
+    .automatic-box img {
+        width: 100%;
+    }
+    
+    .money-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .ready {
+        width: 100px;
+        height: 40px;
+        margin-bottom: 25px;
+    }
+}
