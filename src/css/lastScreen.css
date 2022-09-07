@@ -40,27 +40,6 @@
     padding-right: 10px;
 }
 
-.search-container {
-    margin-left: 225px;
-    margin-top: 15px;
-}
-
-.search {
-    width: 276px;
-    height: 40px;
-    background: url("../img/icono-buscador.png") #F2F2F2 no-repeat;
-    background-size: 18px;
-    background-position: 10px 9px;
-    opacity: 50%;
-    border: none;
-    border-radius: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    padding-left: 35px;
-}
-
 /* placeholder color */
 ::-webkit-input-placeholder { color:black; } 
 :-moz-placeholder { /* Firefox 18- */ color:black; } 
@@ -98,6 +77,30 @@ h1 {
     text-align: center;
 }
 
+.ready {
+    width: 200px;
+    height: 40px;
+    background: #5492BF;
+    border-radius: 10px;
+    margin-top: 30px;
+    border-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.ready a:hover {
+    color: #000000;
+}
+
+.ready a {
+    text-decoration: none;
+    color: white;
+}
+
 /* footer */
 footer{
     width: 100%;
@@ -115,13 +118,6 @@ footer li a {
     margin-left: 60px;
     text-decoration: none;
     color: #ABABAB;
-}
-
-.footer-list {
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 14px;
 }
 
 .rights-reserved {
@@ -142,10 +138,6 @@ footer li a {
     }
 
     .menu {
-        display: none;
-    }
-
-    .search-container {
         display: none;
     }
 
