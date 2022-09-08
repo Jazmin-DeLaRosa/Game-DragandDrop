@@ -41,3 +41,4 @@ function dropProductReturn(e) {
     returnObject.appendChild(document.getElementById(data));
     console.log(returnObject.childElementCount);
 }
+
