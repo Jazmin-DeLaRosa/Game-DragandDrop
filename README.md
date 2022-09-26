@@ -1,7 +1,7 @@
 # Game Drag and Drop
  
 
-Esta prueba fue realizada con HTML, CSS y JavaScript.
+Este juego fue realizada con HTML, CSS y JavaScript.
 
 
 ## Desarrollo del proyecto 💻
